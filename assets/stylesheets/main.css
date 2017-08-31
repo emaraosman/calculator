@@ -89,7 +89,8 @@ th{
 	font-family: "calculatorfont";
 	font-size: 40px;
 	white-space: nowrap;
-	overflow: scroll;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 td:hover{

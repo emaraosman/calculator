@@ -48,7 +48,7 @@
 
 <td class= "operator">.</td>
 <td class="number">0</td>
-<td class="operator">=</td>
+<td class="equals">=</td>
 <td class="operator">/</td>
 
 
@@ -68,14 +68,35 @@ var result=0;
 $(document).ready(function(){
   $(".number").click(function(){
     result+=$(this).text();
-    console.log(result);
-    $("#display").text(result);
+    display+=$(this).text();
+    $("#display").text(display);
+  })
+
+  $(".operator").click(function(){
+    display = " ";
+    result+=$(this).text();
+    $("#display").text(display);
 
   })
 
+
+
+  $(".equals").click(function(){
+    function calc(result){
+      result = Math.floor(result);
+      return result;
+    }
+    console.log(Math.floor(result))
+    $("#display").text(result);
+    result=0;
+    display=" ";
+  })
+
+
+
+
 });
 
-console.log(result);
 
 </script>
 
