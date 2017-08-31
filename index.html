@@ -46,12 +46,16 @@
 
 
 
-<td class= "operator">.</td>
+<td class= "number">.</td>
 <td class="number">0</td>
 <td class="equals">=</td>
 <td class="operator">/</td>
 
 
+</tr>
+
+<tr>
+  <td colspan="3" class="clear">CLEAR</td>
 </tr>
 
 </table>
@@ -64,6 +68,7 @@
 
 var display="";
 var result=0;
+console.log(typeof(result));
 
 $(document).ready(function(){
   $(".number").click(function(){
@@ -80,20 +85,23 @@ $(document).ready(function(){
   })
 
 
-
   $(".equals").click(function(){
     function calc(result){
-      result = Math.floor(result);
-      return result;
+      return new Function('return ' + result)()
     }
-    console.log(Math.floor(result))
-    $("#display").text(result);
-    result=0;
+
+    $("#display").text(calc(result));
     display=" ";
   })
 
+  $(".clear").click(function(){
+    result = 0;
+    display = " ";
+    $("#display").text(display);
+  })
 
 
+console.log(typeof(result));
 
 });
 
