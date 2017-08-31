@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+//////////////////  FONT BELOW
+*/
+
+@font-face {
+    font-family: "calculatorfont";
+    src: url("calculatorfont.ttf") format("truetype");
+}
+
+/*
+//////////////////////////////////////////////////////////////
+//////////////////  STYLE STARTS BELOW
+//////////////////////////////////////////////////////////////
+*/
+
+
+
+table{
+	border: solid 2px black;
+	text-align: center;
+	background-color: black;
+	margin: auto auto;
+	height: auto;
+	width: auto;
+}
+
+th{
+	padding: 5px;
+	padding-right: 15px;
+	background-color: rgb(85, 135, 91);
+	/*border: 2px solid black;*/
+	width:50px;
+	height: 75px;
+	max-width: 50px;
+	font-size: 25px;
+	text-align: right;
+	color: black;
+	vertical-align: middle;
+	font-family: "calculatorfont";
+	font-size: 40px;
+	white-space: nowrap;
+	overflow: scroll;
+}
+
+td:hover{
+	cursor: pointer;
+}
+
+td{
+	color: white;
+	padding: 5px;
+	background-color: gray;
+	width:50px;
+	height: 50px;
+	font-size: 20px;
+	background-color: gray;
+	margin: 0 auto;
+	vertical-align: middle;
+	font-size: 30px;
+	border: 1px solid black;
+	/*text-shadow: 1px 0px 0px black;
+	border-left: 5px solid gray;
+	border-top: 5px solid gray;
+	border-right: 5px solid gray;
+	border-bottom: 5px solid gray;*/
+
+}
+
+td:hover{
+	background-color: red;
+	background-image: none;
+}
+
+tr{
+	margin: auto;
+	padding: auto;;
+}
+
+.operator{
+	//background-color: rgb(109, 255, 216);
+	background-color: lightgray;
+	background-image: none;
+	font-size: 30px;
+}
+
+
+
+
+
+//
