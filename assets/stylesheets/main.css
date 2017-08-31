@@ -65,23 +65,20 @@ table {
 
 
 
-table{
+section{
 	border: solid 2px black;
 	text-align: center;
 	background-color: black;
 	margin: auto auto;
 	height: auto;
-	width: auto;
+	width: 290px;
 }
 
-th{
-	padding: 5px;
-	padding-right: 15px;
-	background-color: rgb(85, 135, 91);
-	/*border: 2px solid black;*/
-	width:50px;
+#display{
+	display: inline-block;
+	background-color: rgb(112, 160, 93);
+	width:280px;
 	height: 75px;
-	max-width: 50px;
 	font-size: 25px;
 	text-align: right;
 	color: black;
@@ -91,15 +88,18 @@ th{
 	white-space: nowrap;
 	overflow-x: scroll;
 	overflow-y: hidden;
+	margin: 5px;
+	box-shadow: inset 2px 8px 10px rgba(0,0,0,0.7)
 }
 
 td:hover{
 	cursor: pointer;
 }
 
-td{
+.number{
+	display: inline-block;
 	color: white;
-	padding: 5px;
+	/*padding: 5px;*/
 	background-color: gray;
 	width:50px;
 	height: 50px;
@@ -117,24 +117,42 @@ td{
 
 }
 
-td:hover{
+.number:hover , .operator:hover{
 	background-color: red;
 	background-image: none;
 }
 
-tr{
-	margin: auto;
-	padding: auto;;
-}
+
 
 .operator{
-	//background-color: rgb(109, 255, 216);
+	display: inline-block;
+	/*//background-color: rgb(109, 255, 216);
 	background-color: lightgray;
 	background-image: none;
-	font-size: 30px;
+	font-size: 30px;*/
+
 }
 
+.row{
+	display: block;
+	width: auto;
+	height: auto;
+}
 
+.key{
+	color: white;
+	/*padding: 5px;*/
+	background-color: gray;
+	width:50px;
+	height: 50px;
+	font-size: 20px;
+	background-color: gray;
+	margin: 0 auto;
+	vertical-align: middle;
+	font-size: 30px;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
 
 
 

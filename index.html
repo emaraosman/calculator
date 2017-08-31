@@ -11,54 +11,51 @@
 
   <body>
     <script src="index.js"></script>
-
-<table>
 <br>
-<th colspan="4" id="display"></th>
+<section>
+
+<div id="display"></div>
 
 
-<tr>
-  <td class="number">7</td>
-  <td class="number">8</td>
-  <td class="number">9</td>
-  <td class="operator">*</td>
-</tr>
+<div class= "row">
+  <div class="number key">7</div>
+  <div class="number key">8</div>
+  <div class="number key">9</div>
+  <div class="operator key">*</div>
+</div>
 
-<tr>
-  <td class="number">4</td>
-  <td class="number">5</td>
-  <td class="number">6</td>
-  <td class="operator">+</td>
-</tr>
-
-<tr>
-
-<td class="number">1</td>
-<td class="number">2</td>
-<td class="number">3</td>
-<td class="operator">-</td>
-
-</tr>
+<div class= "row">
+  <div class="number key">4</div>
+  <div class="number key">5</div>
+  <div class="number key">6</div>
+  <div class="operator key">+</div>
+</div>
 
 
-
-<tr>
+<div class= "row">
+  <div class="number key">1</div>
+  <div class="number key">2</div>
+  <div class="number key">3</div>
+  <div class="operator key">-</div>
+</div>
 
 
 
-<td class= "number">.</td>
-<td class="number">0</td>
-<td class="equals">=</td>
-<td class="operator">/</td>
+<div class="row">
 
+  <div class= "number key">.</div>
+  <div class="number key">0</div>
+  <div class="equals key">=</div>
+  <div class="operator key">/</div>
 
-</tr>
+</div>
 
-<tr>
-  <td colspan="3" class="clear">CLEAR</td>
-</tr>
+<div class="row">
+  <div colspan="" class="clear key">CLEAR</div>
+  <div class="operator key">avg</div>
+</div>
 
-</table>
+</section>
 
 
 
@@ -67,8 +64,11 @@
 <script type="text/javascript">
 
 var display="";
-var result=0;
+var result="";
+var avgArray = [];
 console.log(typeof(result));
+
+
 
 $(document).ready(function(){
   $(".number").click(function(){
@@ -78,30 +78,51 @@ $(document).ready(function(){
   })
 
   $(".operator").click(function(){
-    display = " ";
+    avgArray.push(display)
+    display = "";
     result+=$(this).text();
     $("#display").text(display);
-
+    console.log(avgArray)
   })
 
 
   $(".equals").click(function(){
+    avgArray=[];
     function calc(result){
-      return new Function('return ' + result)()
+      console.log(result)
+      // return new Function('return ' + result)()
+      return eval(result);
     }
 
+
     $("#display").text(calc(result));
-    display=" ";
+    display="";
+    result ="";
   })
 
   $(".clear").click(function(){
-    result = 0;
-    display = " ";
+    result = "";
+    display = "";
     $("#display").text(display);
   })
 
+  $(".avg").click(function(){
+    avgResult=0;
+    avgArray.push(display);
+    avgResult= avgArray.split(",").join("+");
+    console.log(avgResult)
+    // for(var i=0; i<avgArray.length; i++){
+    //
+    //   avgResult+=avgArray[i]
+    //   console.log(avgResult)
+    // }
+    // avgResult= avgResult/avgArray.length;
 
-console.log(typeof(result));
+    $("#display").text(avgResult);
+
+  });
+
+
 
 });
 
