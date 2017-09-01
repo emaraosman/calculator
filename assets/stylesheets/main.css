@@ -157,15 +157,7 @@ td:hover{
 
 
 /*KEYFACE STYLING BELOW*/
-/*.box {
-  background-color: black;
 
-  display: block;
-  margin: 100px auto;
-  height:100px;
-  width:100px;
-  border: 1px solid black;
-}
 
 .right, .left, .top, .bottom {
   border-color: transparent;
@@ -229,13 +221,28 @@ td:hover{
   border-bottom-color:gray;
 }
 
+.box {
+  background-color: black;
+
+  display: inline-block;
+  height:100px;
+  width:100px;
+  border: 1px solid black;
+}
+
 .keyface{
-  position: absolute;
+	box-sizing: border-box;
+	position: relative;
   height: 74px;
   width: 74px;
   background-color: beige;
-  top:114px;
-  margin-left:13px
-}*/
+  top:-87px;
+  margin-left:0px
+}
+
+span{
+	vertical-align: middle;
+}
+
 
 //
