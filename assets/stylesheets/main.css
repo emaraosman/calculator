@@ -68,32 +68,35 @@ table {
 section{
 	border: solid 2px black;
 	text-align: center;
-	background-color: black;
+	background-color: gray;
 	margin: auto auto;
 	height: auto;
-	width: 290px;
+	width: 350px;
+	padding-bottom: 10px;
 }
 
 #display{
 	display: inline-block;
 	background-color: rgb(112, 160, 93);
 	width:280px;
-	height: 65px;
+	height: 60px;
 	font-size: 25px;
 	text-align: right;
 	color: black;
 	vertical-align: middle;
 	font-family: "calculatorfont";
-	font-size: 40px;
+	font-size: 48px;
 	white-space: nowrap;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	line-height:60px;
-	margin: 5px;
-	box-shadow: inset 2px 8px 8px rgba(0,0,0,0.6)
+	box-shadow: inset 2px 8px 8px rgba(0,0,0,0.6);
+	margin: 4px 2px 20px 2px;
+	padding-top: 5px;
+	border: 30px solid black;
 }
 
-td:hover{
+.key:hover{
 	cursor: pointer;
 }
 
@@ -102,8 +105,8 @@ td:hover{
 	color: white;
 	/*padding: 5px;*/
 	background-color: gray;
-	width:50px;
-	height: 50px;
+	/*width:50px;
+	height: 50px;*/
 	font-size: 20px;
 	background-color: gray;
 	margin: 0 auto;
@@ -119,7 +122,7 @@ td:hover{
 }
 
 .number:hover , .operator:hover{
-	background-color: red;
+	background-color: beige;
 	background-image: none;
 }
 
@@ -133,15 +136,23 @@ td:hover{
 	font-size: 30px;*/
 
 }
+.equals{
+	display: inline-block;
+}
+.clear{
+	display: inline-block;
+}
 
 .row{
 	display: block;
 	width: auto;
 	height: auto;
+	margin-bottom:-34px;
+	padding:0px;
 }
 
 .key{
-	color: white;
+	color: black;
 	/*padding: 5px;*/
 	background-color: gray;
 	width:50px;
@@ -162,8 +173,7 @@ td:hover{
 .right, .left, .top, .bottom {
   border-color: transparent;
   border-style: solid;
-  border-width: 50px;
-
+  border-width: 40px;
   display: block;
   padding: 0;
   width: 0;
@@ -183,26 +193,28 @@ td:hover{
 .top {
   border-top-color: lightgray;
 
-  margin-bottom: -100px;
+  margin-bottom: -80px;
 }
 
 .right {
+	transition: 0.5s;
   border-right-color: gray;
-  margin-left: -50px;
+  margin-left: -20px;
 }
 
 .bottom {
   border-bottom-color: gray;
-  margin-top: -100px;
+  margin-top: -80px;
 }
 
 .left {
   border-left-color: lightgray;
-  margin-right: -50px;
+  margin-right: -60px;
 }
 
 
-.right:hover {
+.box .right:hover {
+		transition: 0.3s;
     border-right-color: lightgray;
     border-left-color: gray;
     border-top-color: gray;
@@ -225,24 +237,27 @@ td:hover{
   background-color: black;
 
   display: inline-block;
-  height:100px;
-  width:100px;
+  height:80px;
+  width:auto;
   border: 1px solid black;
+	margin: -3px;
+	margin-bottom: -40px;
+	padding-bottom:-40px
 }
 
 .keyface{
 	box-sizing: border-box;
 	position: relative;
-  height: 74px;
-  width: 74px;
-  background-color: beige;
-  top:-87px;
-  margin-left:0px
+  height: 60px;
+  width: 60px;
+  background-color: rgba(245, 245, 220,1);
+  top:-70px;
+  margin-left:0px;
+	padding-top:13px;
+	border: 1px solid rgba(235, 235, 220,1);
+
 }
 
-span{
-	vertical-align: middle;
-}
 
 
 //
