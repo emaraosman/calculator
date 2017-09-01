@@ -156,5 +156,86 @@ td:hover{
 }
 
 
+/*KEYFACE STYLING BELOW*/
+/*.box {
+  background-color: black;
+
+  display: block;
+  margin: 100px auto;
+  height:100px;
+  width:100px;
+  border: 1px solid black;
+}
+
+.right, .left, .top, .bottom {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 50px;
+
+  display: block;
+  padding: 0;
+  width: 0;
+  height: 0;
+}
+
+.right, .left {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.top, .bottom {
+  margin: 0 auto;
+}
+
+.top {
+  border-top-color: lightgray;
+
+  margin-bottom: -100px;
+}
+
+.right {
+  border-right-color: gray;
+  margin-left: -50px;
+}
+
+.bottom {
+  border-bottom-color: gray;
+  margin-top: -100px;
+}
+
+.left {
+  border-left-color: lightgray;
+  margin-right: -50px;
+}
+
+
+.right:hover {
+    border-right-color: lightgray;
+    border-left-color: gray;
+    border-top-color: gray;
+    border-bottom-color: lightgray;
+}
+
+.left:hover {
+  border-left-color:gray;
+}
+
+.top:hover {
+  border-top-color:gray;
+}
+
+.bottom:hover {
+  border-bottom-color:gray;
+}
+
+.keyface{
+  position: absolute;
+  height: 74px;
+  width: 74px;
+  background-color: beige;
+  top:114px;
+  margin-left:13px
+}*/
 
 //
