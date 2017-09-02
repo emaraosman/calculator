@@ -73,12 +73,15 @@ section{
 	height: auto;
 	width: 350px;
 	padding-bottom: 10px;
+	border-radius: 15px;
+	box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.6);
+
 }
 
 #display{
 	display: inline-block;
 	background-color: rgb(112, 160, 93);
-	width:280px;
+	width:262px;
 	height: 60px;
 	font-size: 25px;
 	text-align: right;
@@ -91,7 +94,7 @@ section{
 	overflow-y: hidden;
 	line-height:60px;
 	box-shadow: inset 2px 8px 8px rgba(0,0,0,0.6);
-	margin: 4px 2px 20px 2px;
+	margin: 13px 4px 20px 4px;
 	padding-top: 5px;
 	border: 30px solid black;
 }
@@ -122,7 +125,7 @@ section{
 }
 
 .number:hover , .operator:hover{
-	background-color: beige;
+	background-color: rgb(198, 198, 183);
 	background-image: none;
 }
 
@@ -154,14 +157,14 @@ section{
 .key{
 	color: black;
 	/*padding: 5px;*/
-	background-color: gray;
+	//background-color: gray;
 	width:50px;
 	height: 50px;
 	font-size: 20px;
 	background-color: gray;
 	margin: 0 auto;
 	vertical-align: middle;
-	font-size: 30px;
+	font-size: 35px;
 	border: 1px solid black;
 	box-sizing: border-box;
 }
@@ -191,7 +194,7 @@ section{
 }
 
 .top {
-  border-top-color: lightgray;
+  border-top-color: rgb(183, 183, 161);
 
   margin-bottom: -80px;
 }
@@ -208,30 +211,19 @@ section{
 }
 
 .left {
-  border-left-color: lightgray;
+  border-left-color: rgb(183, 183, 161);
   margin-right: -60px;
 }
 
 
-.box .right:hover {
+.box:hover > .right {
 		transition: 0.3s;
-    border-right-color: lightgray;
+    border-right-color: rgb(183, 183, 161);
     border-left-color: gray;
     border-top-color: gray;
-    border-bottom-color: lightgray;
+    border-bottom-color: rgb(183, 183, 161);
 }
 
-.left:hover {
-  border-left-color:gray;
-}
-
-.top:hover {
-  border-top-color:gray;
-}
-
-.bottom:hover {
-  border-bottom-color:gray;
-}
 
 .box {
   background-color: black;
@@ -250,14 +242,20 @@ section{
 	position: relative;
   height: 60px;
   width: 60px;
-  background-color: rgba(245, 245, 220,1);
+  background-color: rgb(214, 214, 190);
   top:-70px;
   margin-left:0px;
 	padding-top:13px;
-	border: 1px solid rgba(235, 235, 220,1);
+	border: 1px solid rgb(183, 183, 161);
 
 }
 
+.keyface:hover{
+	height:55px;
+	width:55px;
+	top:-68px;
+	margin-bottom:5px;
+}
 
 
 //
