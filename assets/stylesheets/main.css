@@ -54,7 +54,7 @@ table {
 
 @font-face {
     font-family: "calculatorfont";
-    src: url("calculatorfont.ttf") format("truetype");
+    src: url("../../assets/stylesheets/calculatorfont.ttf") format("truetype");
 }
 
 /*
